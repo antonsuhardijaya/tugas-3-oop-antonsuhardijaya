@@ -1,0 +1,52 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Roboto,Arial,sans-serif;background:#f3f5f9;color:#1f2937;font-size:15px}
+a{color:#2563eb;text-decoration:none}
+nav{background:#1e293b;color:#fff;display:flex;align-items:center;gap:4px;padding:0 20px;flex-wrap:wrap}
+nav .brand{font-weight:700;font-size:18px;margin-right:20px;padding:14px 0}
+nav a{color:#cbd5e1;padding:15px 14px;display:inline-block}
+nav a:hover,nav a.active{background:#334155;color:#fff}
+nav .spacer{flex:1}
+nav .who{color:#94a3b8;font-size:13px;margin-right:10px}
+main{max-width:1200px;margin:24px auto;padding:0 16px}
+h1{font-size:22px;margin:0 0 16px}
+.card{background:#fff;border-radius:10px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.08);margin-bottom:18px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin-bottom:18px}
+.stat{background:#fff;border-radius:10px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.stat small{color:#6b7280;display:block;margin-bottom:6px}
+.stat b{font-size:24px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:9px 10px;border-bottom:1px solid #e5e7eb;text-align:left;vertical-align:middle}
+th{background:#f9fafb;font-size:13px;color:#4b5563}
+td.r,th.r{text-align:right}
+input,select{padding:9px 10px;border:1px solid #cbd5e1;border-radius:6px;font-size:15px;width:100%}
+label{display:block;font-size:13px;color:#4b5563;margin:12px 0 4px}
+.btn{display:inline-block;background:#2563eb;color:#fff;border:0;border-radius:6px;padding:9px 16px;cursor:pointer;font-size:14px}
+.btn:hover{background:#1d4ed8}
+.btn.sm{padding:5px 10px;font-size:13px}
+.btn.red{background:#dc2626}.btn.red:hover{background:#b91c1c}
+.btn.gray{background:#64748b}.btn.gray:hover{background:#475569}
+.btn.green{background:#16a34a;font-size:17px;padding:13px;width:100%}.btn.green:hover{background:#15803d}
+.row{display:flex;gap:8px;align-items:center;margin-bottom:12px}
+.row input{flex:1}
+.row form{margin:0}
+.msg{padding:11px 14px;border-radius:8px;margin-bottom:16px}
+.msg.ok{background:#dcfce7;color:#166534}.msg.err{background:#fee2e2;color:#991b1b}
+.pos{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:900px){.pos{grid-template-columns:1fr}}
+.total{font-size:28px;font-weight:700;text-align:right;margin:10px 0}
+.qty{width:70px;padding:5px}
+form.inline{display:inline;margin:0}
+.badge{background:#fee2e2;color:#991b1b;border-radius:10px;padding:2px 8px;font-size:12px}
+/* login */
+.login-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1e293b,#2563eb)}
+.login-box{background:#fff;width:100%;max-width:380px;border-radius:12px;padding:32px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.login-box h1{text-align:center;margin-bottom:4px}
+.login-box p{text-align:center;color:#6b7280;margin-top:0}
+.login-box .btn{width:100%;margin-top:18px;padding:11px}
+/* struk */
+.struk{width:300px;margin:20px auto;background:#fff;padding:16px;font-family:"Courier New",monospace;font-size:13px}
+.struk h2,.struk p{text-align:center;margin:2px 0}
+.struk hr{border:0;border-top:1px dashed #555;margin:8px 0}
+.struk table td,.struk table th{border:0;padding:2px 0;background:none}
+.noprint{text-align:center;margin:16px}
+@media print{.noprint{display:none}body{background:#fff}.struk{margin:0;box-shadow:none}}
